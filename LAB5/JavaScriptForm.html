@@ -14,7 +14,25 @@
         if (fail == "") return true;
         else {
           alert(fail);
+          return false;
         }
+      }
+
+      function validateUsername(field) {
+        if (field == "") return "No Username was entered.\n";
+        else if (field.length < 5)
+          return "Usernames must be at least 5 characters .\n";
+        return "";
+      }
+
+      function validateEmail(field) {
+        if (field == "") return "No Email was entered.\n";
+        else if (
+          !(field.indexOf(".") > 0 && field.indexOf("@") > 0) ||
+          /[^a-zA-Z0-9.@_-]/.test(field)
+        )
+          return "The Email address is invalid.\n";
+        return "";
       }
     </script>
   </head>
