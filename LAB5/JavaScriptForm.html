@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      function validate(form) {
+        fail = validateUsername(form.username.value);
+        fail += validatePassword(form.password.value);
+        fail += validateEmail(form.email.value);
+
+        if (fail == "") return true;
+        else {
+          alert(fail);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form method="get" action="" onsubmit="return validate(this)">
+      Username <input type="text" name="username" /> <br />
+      Password <input type="password" name="password" /> <br />
+      Email <input type="text" name="email" /> <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
