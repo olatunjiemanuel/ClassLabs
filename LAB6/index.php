@@ -63,5 +63,78 @@
         echo $myArray[1];
         unset($array[2]);
     ?>
+
+    <?php
+        $provisionedActvities = array("Specs", "Mug", "Sausage Rolls");
+        foreach($provisionedActvities as $x) {
+            $provisionedActvities[1] = "Hugs";
+            print
+            "
+            <body>
+                <h1>Provisioned Activities</h1>
+                <p>$x</p>
+            </body>
+            ";
+        }
+    ?>
+
+    <?php
+        for ($i = 1; $i < 10; $i++)
+            {
+                echo "<p> Hello ! </p>";
+            }
+    ?>
+    <br>
+    <?php
+    for ($i = 1; $i < 10; $i ++)
+    {
+        echo "
+        <div id = 'form'>
+            <form>
+                <input type = 'password'>Please enter your password</input>
+            </form>
+        </div>
+        ";
+    }
+    ?>
+    <br>
+     <?php
+    for ($i = 1; $i < 31; $i++)
+        {
+            if ($i == 1) {
+                print"
+                    On the $i of the month, no products are available <br>
+                ";
+            }
+            else if ($i % 2 == 0 ) {
+                print"
+                On the $i of the month, specs are available <br>
+                ";
+            }
+            else if ($i % 3 == 0) {
+                print"
+                On the $i of the month, mugs are available <br>
+                ";
+            }
+            else if ($i % 4 == 0) {
+                print"
+                On the $i of the month, specs and sausage rolls products are available <br>
+                ";
+            }
+        }
+        ?>
+
+<br>
+<?php
+$length = strlen("david");
+$my_name = str
+print $length;
+    // while(2 > 1){
+
+    // }
+
+    // do {}
+    // while();
+?>
 </body>
 </html>
