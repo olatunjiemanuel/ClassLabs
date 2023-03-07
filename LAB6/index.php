@@ -125,16 +125,6 @@
         ?>
 
 <br>
-<?php
-$length = strlen("david");
-$my_name = str
-print $length;
-    // while(2 > 1){
-
-    // }
-
-    // do {}
-    // while();
-?>
+<!-- -->
 </body>
 </html>
